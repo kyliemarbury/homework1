@@ -1,8 +1,8 @@
 public class parkingspot {
-    public car parkedCar; 
+    public Car parkedCar; 
     public boolean handicap; 
 
-    public parkingspot(boolean handicap){
-        this.handicap = handicap; 
+    public ParkingSpot(boolean handicap){
+        this.handicap = handicap; //used when parking spot is made 
     }
 }
