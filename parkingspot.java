@@ -1,4 +1,4 @@
-public class parkingspot {
+public class ParkingSpot {
     public Car parkedCar; 
     public boolean handicap; 
 

@@ -12,7 +12,7 @@ public class ParkingLot{
             }
         }
     }
-    public int carspot(car car){
+    public int carspot(Car car){
         int index = -1; // -1 cuz there wont actually be -1 and its bad 
         for (int i = 0;i < 10; i++){
             if (this.spots[i].parkedCar == null){ //thats inside of that inside of that inside another thing -- right inside left 
@@ -29,8 +29,8 @@ public class ParkingLot{
             } 
         } return index;
     }
-   public car removecar(int numberlot){ //given spot
-        car carreturn = null; //match the types 
+   public Car removecar(int numberlot){ //given spot
+        Car carreturn = null; //match the types 
         if (this.spots[numberlot].parkedCar != null){ // != only used in if statements
             carreturn = this.spots[numberlot].parkedCar;
             this.spots[numberlot].parkedCar = null;
@@ -44,7 +44,7 @@ public class ParkingLot{
             if ((this.spots[i].handicap == true)&&(this.spots[i].parkedCar == null)){//open spots
                 handicapspots +=1;
             } 
-            else if (this.spots[i].handicap == false)&&(this.spots[i].parkedCar == null){
+            else if (this.spots[i].handicap == false && this.spots[i].parkedCar == null){
                 openspots +=1;
             }
         }
